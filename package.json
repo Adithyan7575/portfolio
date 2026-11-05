@@ -1,0 +1,7 @@
+{
+  "name": "adithyan-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Adithyan V, built with CursorSwarm",
+  "scripts": { "start": "python3 -m http.server 8787" },
+  "license": "MIT"
+}
