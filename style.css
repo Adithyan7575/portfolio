@@ -282,7 +282,7 @@ html {
     container-type: inline-size;
     width: 100vw;
     margin-left: calc(50% - 50vw);
-    min-height: 100vh;
+    min-height: min(100vh, 70vw);
     padding: 120px 4vw 48px;
     display: flex;
     flex-direction: column;
@@ -311,7 +311,8 @@ html {
     transform: translateX(-50%);
     margin: 0;
     width: min(26cqw, 520px);
-    height: calc(100% - 186px)
+    aspect-ratio: 9 / 16;
+    max-height: calc(100% - 186px)
 }
 
 .hero-poster .poster-photo img {
@@ -648,9 +649,15 @@ footer .wrap {
         letter-spacing: .04em
     }
 
+    .hero-poster {
+        min-height: 100vh
+    }
+
     .hero-poster .poster-photo {
         width: 58cqw;
         height: 56%;
+        aspect-ratio: auto;
+        max-height: none;
         top: 84px
     }
 
@@ -809,5 +816,13 @@ footer .wrap {
 @media(max-width:520px) {
     #certificates .certs {
         grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:520px) {
+    .hero-poster .tagline {
+        font-size: 10px;
+        letter-spacing: .1em;
+        line-height: 1.4
     }
 }
