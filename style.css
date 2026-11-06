@@ -307,10 +307,10 @@ html {
     position: absolute;
     z-index: 0;
     left: 50%;
-    top: 100px;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     margin: 0;
-    width: min(34cqw, 560px);
+    width: min(34cqw, 560px, 47vh);
     aspect-ratio: 1091 / 1280
 }
 
@@ -323,8 +323,12 @@ html {
 }
 
 .hero-poster h1 {
-    position: relative;
+    position: absolute;
     z-index: 2;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     margin: 0;
     width: 100%;
     white-space: nowrap;
@@ -648,11 +652,11 @@ footer .wrap {
     }
 
     .hero-poster {
-        min-height: 100vh
+        min-height: max(100vh, 230vw)
     }
 
     .hero-poster .poster-photo {
-        width: 78cqw;
+        width: 72cqw;
         aspect-ratio: 1091 / 1280;
         top: 50%;
         transform: translate(-50%, -50%)
@@ -817,6 +821,19 @@ footer .wrap {
 }
 
 @media(max-width:520px) {
+    .hero-poster .poster-foot p {
+        font-size: 14px
+    }
+
+    .hero-poster .poster-foot .btn {
+        padding: 11px 15px;
+        font-size: 12px
+    }
+
+    .hero-poster .poster-foot .row {
+        gap: 8px
+    }
+
     .hero-poster .tagline {
         font-size: 10px;
         letter-spacing: .1em;
