@@ -654,25 +654,25 @@ footer .wrap {
     .hero-poster {
         min-height: 0;
         justify-content: flex-start;
-        padding: 84px 4vw 36px
+        padding: 90px 4vw 28px
     }
 
-    /* photo and name share one centre line, placed right under the tagline */
+    /* photo and name share one centre line, right under the tagline */
     .hero-poster .poster-photo {
-        width: 72cqw;
+        width: 78cqw;
         aspect-ratio: 1091 / 1280;
-        top: 150px;
+        top: 140px;
         transform: translateX(-50%)
     }
 
     .hero-poster h1 {
-        top: calc(150px + 72cqw * 0.5866);
+        top: calc(140px + 78cqw * 0.5866);
         transform: translateY(-50%)
     }
 
-    /* push the intro text below the photo */
+    /* intro text starts right below the photo */
     .hero-poster .poster-foot {
-        margin-top: calc(72cqw * 1.1732 + 60px)
+        margin-top: calc(78cqw * 1.1732 + 42px)
     }
 
     .hero-poster .poster-foot {
